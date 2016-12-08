@@ -1,0 +1,35 @@
+
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-xs-12">
+        <div class="form-group">
+            <form novalidate name="signInForm">
+                <h3 class="text-center">Login In:</h3>
+
+                <label for="userName">Your Login :</label>
+                <input type="text" id="userName" class="form-control" name="userName" placeholder="Username"
+                       ng-model="signCtrl.user.login" minlength="2" required>
+
+                <span ng-if="(signInForm.userName.$error.minlength || signInForm.userName.$error.required)
+                    && signInForm.userName.$touched">
+                    This field must be at least 2 characters long.
+                </span>
+                <br>
+
+                <label for="userPassword">Your Password :</label>
+                <input type="password" id="userPassword" name="userPassword" class="form-control" placeholder="Password"
+                   required ng-model="signCtrl.user.password" minlength="6"><br>
+
+                <span ng-if="(signInForm.userPassword.$error.minlength || signInForm.userPassword.$error.required)
+                    && signInForm.userPassword.$touched">
+                    This field must be at least 6 characters long.
+                </span>
+                <br>
+                <button class="btn-primary" ng-disabled="signInForm.$invalid"
+                        ng-click="signCtrl.submit(signCtrl.user)"> Login In
+                </button>
+            </form>
+        </div>
+        <a ui-sref="loginin">en</a> / <a ui-sref="logininru">ru</a>
+    </div>
+</div>
+

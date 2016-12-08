@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-xs-12">
+        <div class="form-group">
+            <form novalidate name="signInForm">
+                <h3 class="text-center">Войдите:</h3>
+
+                <label for="userName">Ваш Логин :</label>
+                <input type="text" id="userName" class="form-control" name="userName" placeholder="Логин"
+                       ng-model="signCtrl.user.login" minlength="2" required>
+
+                <span ng-if="(signInForm.userName.$error.minlength || signInForm.userName.$error.required)
+                    && signInForm.userName.$touched">
+                    Должнен содержать минимум 2 символа
+                </span>
+                <br>
+
+                <label for="userPassword">Ваш пароль:</label>
+                <input type="password" id="userPassword" name="userPassword" class="form-control" placeholder="Пароль"
+                       required ng-model="signCtrl.user.password" minlength="6"><br>
+
+                <span ng-if="(signInForm.userPassword.$error.minlength || signInForm.userPassword.$error.required)
+                    && signInForm.userPassword.$touched">
+                    Не менее 6 символов
+                </span>
+                <br>
+
+                <button class="btn-primary" ng-disabled="signInForm.$invalid"
+                        ng-click="signCtrl.submit(signCtrl.user)"> Войти
+                </button>
+            </form>
+        </div>
+        <a ui-sref="loginin">en</a> / <a href="logininru">ru</a>
+    </div>
+</div>
