@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1072px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.header{
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__menu{
+    list-style: none;
+}
+
+.header__menu li{
+    display: inline-block;
+}
+
+.header__menu li a{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.header__logo{
+    margin-left: 160px;
+}
+
+.header__tools{
+    margin-left: 350px;
+}
+
+.header__tools i{
+    margin-right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.title{
+    height: 200px;
+    background: url("img/bg.png");
+}
+
+.title__header{
+    margin: 0 auto;
+    color: #fff;
+    text-transform: uppercase;
+    max-width: 300px;
+    text-align: center;
+    line-height: 200px;
+    height: 100%;
+}
+
+.main{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__img img{
+    max-height: 314px;
+    max-width: 220px;
+}
+
+.main__content{
+    margin-left: 55px;
+    max-width: 510px;
+}
+
+.main__content .main__desc p{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.main__social-btn a{
+    text-decoration: none;
+}
+
+.main__social-btn a .social-btn{
+    display: inline-block;
+    height: 20px;
+    border-radius: 50%;
+    width: 20px;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.main__social-btn a .social-btn--vk {
+    background-color: #4D76A1;
+}
+
+.main__social-btn a .social-btn--fb {
+    background-color: #3B5998;
+}
+
+.main__social-btn a .social-btn--tw {
+    background-color: #55ACEE;
+}
+
+.main__social-btn a .social-btn--google{
+    background-color: #DC4E41;
+}
+
+.hr{
+    margin-top: 110px;
+    width: 100%;
+    height: 1px;
+    background-color: #C8C8C8;
+}
+
+.footer{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer ul{
+    margin-right: 40px;
+    font-size: 14px;
+    list-style: none;
+}
+
+.footer ul:last-child{
+    margin-right: 0;
+}
+
+.footer__address li{
+    margin-bottom: 10px;
+}
+
+.footer__address li p{
+    float: right;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 110%;
+    letter-spacing: 0.6px;
+    color: #1A1A1A;
+}
+
+.footer__contacts li{
+    margin-bottom: 10px;
+}
+
+.footer__contacts h4{
+    font-size: 18px;
+}
+
+.footer__menu li{
+    margin-bottom: 20px;
+}
+
+.footer__menu li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.footer__social-btn{
+    text-align: right;
+}
+
+.footer__social-btn i{
+    font-size: 20px;
+    color: #000;
+    margin-left: 20px;
+}
+
+.footer__form{
+    margin: 20px 0 30px 0;
+}
+
+.footer__form div{
+    height: 35px;
+    max-width: 300px;
+}
+
+.footer__form div span{
+    display: inline-block;
+    width: 60px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-right: -5px;
+    color: #fff;
+    background-color: #25ADFA;
+    text-align: center;
+}
+
+.footer__form div .footer__form__send{
+    color: #fff;
+    width: 45px;
+    margin-right: 0;
+    margin-left: -10px;
+}
+
+.footer__form input{
+    border: 0;
+    background-color: #EDEDED;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__copyright{
+    text-align: right;
+}
+
+/*Media*/
+@media (max-width: 992px) {
+    .header__tools{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 738px) {
+
+    .header__logo{
+        margin-left: 30px;
+    }
+
+    .header__tools{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .header{
+        min-height: 150px;
+    }
+
+    .header__menu{
+
+    }
+
+    .header__logo{
+        order: -1;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header__tools{
+        margin-left: 30px;
+    }
+}
