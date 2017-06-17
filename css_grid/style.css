@@ -1,0 +1,39 @@
+#block-1{
+    grid-area: header;
+}
+
+#block-2{
+    grid-area: sidebar;
+}
+
+#block-3{
+    grid-area: content;
+}
+
+#block-4{
+    grid-area: sidebar2;
+}
+
+#block-5{
+    grid-area: footer;
+}
+
+.container{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 240px auto 240px;
+    grid-template-areas: "header  header  header"
+    "sidebar content sidebar2"
+    "sidebar footer  footer";
+}
+
+.container div{
+    border: 1px solid black;
+    text-align: center;
+    min-height: 150px;
+    line-height: 150px;
+}
+
+#block-2{
+    line-height: 300px;
+}
