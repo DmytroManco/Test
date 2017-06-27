@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+
+body, html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 20px;
+  background: #ccc url(../img/body-gradient.png) repeat-x 0 0;
+}
